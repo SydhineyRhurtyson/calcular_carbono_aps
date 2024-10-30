@@ -1,49 +1,39 @@
-/* Reseta margens e paddings */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
 * {
+    font-family: 'poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo Global */
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4; /* Cor de fundo padrão */
-    background-image: url('../img/carbono.jpg'); /* Imagem de fundo */
-    background-size: cover; /* Garante que a imagem cubra o espaço */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Impede que a imagem se repita */
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    justify-content: space-between;
+ /* background: linear-gradient(90deg, #90EE90, #013220); */
+ background: linear-gradient(135deg, #a0c2aa, #228B22);
 }
+   
 
-/* Cabeçalho */
+
+
 header {
-    background-color: #2b622d;
+    background-color: #262626;
     color: rgb(255, 254, 251);
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-    margin-bottom: 10px;
+    /* padding: 20px; */
+    /* text-align: center; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 header p {
-    margin-bottom: 20px;
+    /* margin-left: 35em; */
     font-size: 1.1em;
+    padding-left: 35em;
+    font-weight: bold; 
+    /* padding-right: 0; */
 }
 
 /* Estilizando a barra de navegação */
 nav {
-    background-color: #2b622d; /* Cor de fundo da barra de navegação */
+    padding: 1.4em;
 }
 
 nav ul {
@@ -51,131 +41,236 @@ nav ul {
     padding: 0; /* Remove o padding padrão */
     margin: 0; /* Remove a margem padrão */
     display: flex; /* Usa flexbox para o layout */
-    justify-content: flex-end; /* Alinha os links à direita */
+
 }
 
 nav ul li {
-    margin-left: 20px; /* Espaço entre os links */
+    margin-left: 2em; 
 }
 
 nav ul li a {
-    text-decoration: none; /* Remove o sublinhado */
-    color: #fffcfc; /* Cor do texto */
-    font-weight: bold; /* Texto em negrito */
-    padding: 10px 15px; /* Espaçamento interno */
-    border-radius: 5px; /* Bordas arredondadas */
-    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+    text-decoration: none; 
+    color: #fffcfc; 
+    font-weight: bold; 
+    padding: 10px 15px; 
+    border-radius: 20px; 
+    transition: background-color 0.3s ease; 
 }
 
 nav ul li a:hover {
-    background-color: #245325; /* Cor de fundo ao passar o mouse */
-    color: #fff; /* Cor do texto ao passar o mouse */
+    background-color: #ffffff; /* Cor de fundo ao passar o mouse */
+    color: #000000; 
 }
 
-/* Estilos principais */
-main {
+.container {
     display: flex;
-    flex-direction: column;
+    font-size: 1em;
+    /* background-color: #000000; */
+    color: #f8fafc;
+}
+
+.column {
+    flex: 1;
+    padding: 3em;
+    text-align: center;
+}
+
+
+.titulo-caixa {
+    margin: 2em;
+}
+
+.column+.column {
+    border-left: 1px solid #ccc;
+}
+
+.texto-aszn {
+    margin: 8%;
+    text-align: center;
+    font-size: 0.8rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main{
+    display:  flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
-    border-radius: 8px;
-    padding: 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    margin: 20px auto;
     width: 100%;
-    max-width: 800px; /* Ajustado para maior largura */
+    height: 100vh;
+    /* height: 90.9vh;  */
 }
 
-/* Estilo dos formulários */
-.form-group {
-    margin-bottom: 15px;
-    width: 100%;
+#container {
+    display:flex;
+    align-items: center;
+    gap: 17rem;
 }
 
-label {
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #2b622d;
+#img img {
+    width: 40rem;
+    height: auto;
 }
 
-input,
-select {
-    margin-bottom: 10px;
-    padding: 10px;
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1em;
+.form-group label {
+    font-size: 1rem;
+    color: #cbd5e1;
+    font-weight: 500
+}
+Select {
+    width: 60%;
+    background-color: #3f3f46;
+    color: #f8fafc;
+    font-size: 1rem;
+    padding: 0 0.5rem;
+    margin-top: 0.3rem;
+    
 }
 
-/* Botão */
-button,
-button[type="submit"] {
-    padding: 10px 20px;
-    background-color: #2b622d;
-    color: #fff;
+/* select option {
+    color: black;
+} */
+
+#calculadora {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2.5rem;
+    /* color: rgb(1, 153, 1); */
+    color: white;
+    background-color: #262626;
+    border-radius: 1rem;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#title {
+    font-size: 1.6rem;
+    position: relative;
+}
+
+#title::after{
+    position: absolute;
+    content: "";
+    background-color: rgb(1, 153, 1);
+    width: 8rem;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    border-radius: 1px;
+}
+
+.input-box label{
+    font-size: 1rem;
+    color: #cbd5e1;
+    font-weight: 500;
+}
+
+.input-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3f3f46;
+    padding: 0.3rem;
+    border-radius: 3px;
+    margin-top: 3px;
+}
+
+.input-icon span,
+.input-icon i {
+    color: #cbd5e1;
+    font-size: 1.3rem;
+    padding: 0.2rem 1rem;
+}
+
+.input-icon input {
+    background-color: transparent;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1em;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
-}
-
-button:hover,
-button[type="submit"]:hover {
-    background-color: #1e4220; /* Cor um pouco mais escura ao passar o mouse */
-}
-
-/* Resultado das emissões */
-#resultado {
-    margin-top: 20px;
-    padding: 15px;
-    background-color: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente */
-    border: 1px solid #c7e7c2;
-    border-radius: 8px;
-    text-align: center;
     width: 100%;
+    font-size: 1rem;
+    color: #f8fafc;
+    padding: 0 0.5rem;
 }
 
-#resultado h2 {
-    margin-bottom: 10px;
-    color: #333;
+/* Removendo setas de Numeração */
+.input-icon input::-webkit-outer-spin-button,
+.input-icon input::-webkit-inner-spin-button {
+    appearance: none;
 }
 
-#resultado p {
-    font-size: 1.5em;
+.input-icon input:focus{
+     outline: none;
+}
+
+#calcular{
+    border: none;
+    font-size: 1.12rem;
     font-weight: bold;
-    color: #2b622d;
+    background-color: #16a34a;
+    color: #f8fafc;
+    padding: 0.5rem ;
+    cursor: pointer;
 }
 
-/* Estilo do Rodapé */
+#resultado{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-top: 1px solid #ffffff34;
+    padding-top: 1.3rem;
+}
+
 footer {
-    background-color: #2b622d;
+    background-color: #262626;
     color: rgb(236, 234, 234);
     text-align: center;
-    padding: 20px;
+    padding: 1.5rem;
     position: relative;
     bottom: 0;
     width: 100%;
+    list-style-type: none;
 }
 
-/* Estilos Responsivos */
-@media (max-width: 768px) {
-    main {
-        padding: 15px;
-        width: 90%;
-    }
-
-    header {
-        padding: 15px;
-    }
-
-    button,
-    button[type="submit"] {
-        width: 100%;
-    }
+footer a {
+    color: white;
 }

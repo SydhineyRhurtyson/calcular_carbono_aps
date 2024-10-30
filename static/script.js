@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('form-carbono');
     const tipoUsuarioSelect = document.getElementById('tipo_usuario');
-    const campoCombustivel = document.getElementById('campo-combustivel');
-    const campoTransporte = document.getElementById('campo-transporte');
-    const campoTransportePublico = document.getElementById('campo-transporte-publico');
-    const campoTransporteCarro = document.getElementById('campo-transporte-carro');
-    const resultadoEmissoes = document.getElementById('resultado-emissoes');
+    const campoCombustivel = document.getElementById('input-combustivel');
+    const campoTransporte = document.getElementById('input-transporte');
+    // const campoTransportePublico = document.getElementById('campo-transporte-publico');
+    // const campoTransporteCarro = document.getElementById('campo-transporte-carro');
+    // const resultadoEmissoes = document.getElementById('resultado-emissoes');
 
     // Função para ajustar os campos visíveis com base no tipo de usuário
     function ajustarCampos() {

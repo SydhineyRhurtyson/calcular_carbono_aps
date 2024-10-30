@@ -1,79 +1,120 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de Crédito de Carbono</title>
+    <title>Calculadora Carbono</title>
+    <link rel="icon" href="./img/planeta-terra.png" type="image/png">
     <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <header>
-        <h1>Calculadora de Crédito Carbono</h1>
-        <p>Uma ferramenta de cálculo de emissões de Gases do Efeito Estufa (GEE)</p>
-        <p>Calcule agora sua pegada de carbono!</p>
-    
         <nav>
             <ul>
-                <li><a href="/">Página Inicial</a></li>
-                <li><a href="/como-funciona">Como Funciona</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="./como-funciona.html">Como Funciona</a></li>
+                <li><p>Ferramenta de cálculo de emissões de Gases do Efeito Estufa (GEE)</p></li>
             </ul>
-        </nav>
-    </header>
-
-    <main>
-        <form id="form-carbono">
-            <!-- Seletor para o tipo de usuário -->
-            <div class="form-group">
-                <label for="tipo_usuario">Selecione o Tipo de Usuário:</label>
-                <select id="tipo_usuario" name="tipo_usuario" required>
-                    <option value="individuo">Indivíduo</option>
-                    <option value="empresa">Empresa</option>
-                    <option value="cidade">Cidade</option>
-                </select>
-            </div>
-
-            <!-- Campos comuns para todos os tipos de usuário -->
-            <div class="form-group">
-                <label for="energia">Consumo de Energia (kWh ou MWh):</label>
-                <input type="number" id="energia" name="energia" required>
-            </div>
             
-            <div id="campo-combustivel" class="form-group">
-                <label for="combustivel">Combustível Consumido (litros):</label>
-                <input type="number" id="combustivel" name="combustivel">
-            </div>
-
-            <div id="campo-transporte" class="form-group">
-                <label for="transporte">Distância Percorrida (km):</label>
-                <input type="number" id="transporte" name="transporte">
-            </div>
-
-            <!-- Campos adicionais para cidades -->
-            <div id="campo-transporte-publico" class="form-group" style="display: none;">
-                <label for="transporte_publico">Distância de Transporte Público (km):</label>
-                <input type="number" id="transporte_publico" name="transporte_publico">
-            </div>
-
-            <div id="campo-transporte-carro" class="form-group" style="display: none;">
-                <label for="transporte_carro">Distância Percorrida por Veículos Particulares (km):</label>
-                <input type="number" id="transporte_carro" name="transporte_carro">
-            </div>
+        </nav>
+        
+    </header>
     
-            <button type="submit">Calcular Pegada de Carbono</button>
-        </form>
-
-        <div id="resultado">
-            <h2>Total de Emissões:</h2>
-            <p id="resultado-emissoes"></p>
-        </div>
+    <main id="container">
+        <section id="img">
+            <img src="./img/Environmental study-bro.svg" alt="">
+        </section>
+        <section id="calculadora">
+            <form id="form">
+                <h1 id="title">
+                    Calculadora - Crédito Carbono
+                </h1>
+                <div class="form-group">
+                    <label for="tipo_usuario">Selecionar Categoria:</label>
+                    <select id="tipo_usuario" required>
+                        <option value="individuo">Indivíduo</option>
+                        <option value="empresa">Empresa</option>
+                        <option value="cidade">Cidade</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <label for="Entrada-1">
+                        Consumo de Energia
+                    </label>
+                    <div class="input-icon">
+                        <i class="fa-solid fa-bolt"></i>
+                        <input type="number" id="">
+                        <span>kWh/MWh</span>
+                    </div>
+                </div>
+                <div class="input-box" id="input-combustivel">
+                    <label for="Entrada-1">
+                        Combustível Consumido
+                    </label>
+                    <div class="input-icon">
+                        <i class="fa-solid fa-gas-pump"></i>
+                        <input type="number" id="">
+                        <span>LITROS</span>
+                    </div>
+                </div>
+                <div class="input-box" id="input-transporte">
+                    <label for="Entrada-1">
+                        Distância de Transporte e Veículos
+                    </label>
+                    <div class="input-icon">
+                        <i class="fa-solid fa-compass"></i>
+                        <input type="number" id="">
+                        <span>KM</span>
+                    </div>
+                </div>
+                <button id="calcular">
+                    Calcular Emissão de carbono
+                </button>
+            </form>
+            <div id="resultado">
+                <h3>Total de Emissões:</h3>
+                <span id="valor emissao">55</span>
+            </div>
+        </section>
     </main>
 
+    <div class="container">
+        <div class="column">
+            <h1 class="titulo-caixa">Motivação</h1>
+            <p>Devido a crescente degradação ambiental, causada principalmente pela queima de combustíveis fósseis e pelo consumo intensivo de recursos. A ferramenta será essencial para desenvolver projetos de redução de emissões e para estimular práticas mais sustentáveis, com benefícios que se estendem à educação, saúde e economia</p>
+        </div>
+        <div class="column">
+            <h1 class="titulo-caixa">Cálculo de Emissão</h1>
+            <p>Nossa calculadora utiliza dados sobre consumo de energia, combustível e transporte para estimar as emissões de gases de efeito estufa...</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="column">
+            <h1 class="titulo-caixa">Transformando vidas</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aspernatur atque temporibus ipsum corrupti perferendis eius iusto at? Eligendi ab error est veniam repudiandae minima autem reiciendis sunt nisi ut?
+            </p>
+        </div>
+        <div class="column">
+            <h1 class="titulo-caixa">Empregabilidade</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat nihil perferendis adipisci fuga cumque illo corrupti quae expedita tempore fugit, error, quibusdam eaque pariatur voluptate tenetur, mollitia optio id doloribus?</p>
+        </div>
+    </div>
+    
+    
     <footer>
-        <p><li><a href="/como-funciona">Como Funciona</a></li></p>
-        <p>&copy; 2024 Calculadora de Carbono</p>
+        <p>
+            <li><a href="/como-funciona">....</a></li>
+        </p>
+        <p>Calculadora De Carbono</p>
+        <p>&copy;2024</p>
     </footer>
 
     <script src="/static/script.js"></script>
 </body>
-</html>
 
+</html>
