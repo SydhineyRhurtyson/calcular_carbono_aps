@@ -8,28 +8,19 @@
 }
 
 body {
- /* background: linear-gradient(90deg, #90EE90, #013220); */
- background: linear-gradient(135deg, #a0c2aa, #228B22);
+ background: linear-gradient(70deg, #66af66, #013220);
+ /* background: linear-gradient(135deg, #a0c2aa, #228B22); */
 }
    
 
-
-
 header {
-    background-color: #262626;
+    background-color: #000000;
     color: rgb(255, 254, 251);
     /* padding: 20px; */
     /* text-align: center; */
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
-header p {
-    /* margin-left: 35em; */
-    font-size: 1.1em;
-    padding-left: 35em;
-    font-weight: bold; 
-    /* padding-right: 0; */
-}
 
 /* Estilizando a barra de navegação */
 nav {
@@ -45,22 +36,32 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 2em; 
+    margin-left: 1em; 
 }
 
 nav ul li a {
     text-decoration: none; 
     color: #fffcfc; 
     font-weight: bold; 
-    padding: 10px 15px; 
+    padding: 0.5em 1.5em; 
     border-radius: 20px; 
     transition: background-color 0.3s ease; 
 }
 
-nav ul li a:hover {
-    background-color: #ffffff; /* Cor de fundo ao passar o mouse */
-    color: #000000; 
+#text-repository{
+   margin-left: 50em;
 }
+
+#como-funciona {
+    color: #fffcfc;
+    text-align: center;
+    font-size: 2em;
+    padding: 3em 0;
+    /* border-bottom: solid 1px #fffcfc; */
+    /* background-color: #000000; */
+    
+}
+
 
 .container {
     display: flex;
@@ -71,7 +72,7 @@ nav ul li a:hover {
 
 .column {
     flex: 1;
-    padding: 3em;
+    padding: 2.5em;
     text-align: center;
 }
 
@@ -83,49 +84,6 @@ nav ul li a:hover {
 .column+.column {
     border-left: 1px solid #ccc;
 }
-
-.texto-aszn {
-    margin: 8%;
-    text-align: center;
-    font-size: 0.8rem;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 main{
@@ -155,7 +113,7 @@ main{
 }
 Select {
     width: 60%;
-    background-color: #3f3f46;
+    background-color: #000000;
     color: #f8fafc;
     font-size: 1rem;
     padding: 0 0.5rem;
@@ -174,7 +132,7 @@ Select {
     padding: 2.5rem;
     /* color: rgb(1, 153, 1); */
     color: white;
-    background-color: #262626;
+    background-color: #000000;
     border-radius: 1rem;
 }
 
@@ -252,6 +210,7 @@ Select {
     cursor: pointer;
 }
 
+
 #resultado{
     display: flex;
     align-items: center;
@@ -261,7 +220,7 @@ Select {
 }
 
 footer {
-    background-color: #262626;
+    background-color: #000000;
     color: rgb(236, 234, 234);
     text-align: center;
     padding: 1.5rem;
@@ -273,4 +232,8 @@ footer {
 
 footer a {
     color: white;
+}
+
+.hidden {
+   display: none !important;
 }
